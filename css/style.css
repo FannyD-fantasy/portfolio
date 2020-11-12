@@ -14,24 +14,14 @@ body {
 @font-face { 
     font-family: "cherolina";
     src: url('../font/Cherolina.ttf');
-  }
-
-.container-grid {
-    height: 100vh;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100px 1fr 1fr 1fr 100px;
-    grid-template-rows: auto 5fr auto;
 }
 
 header {
-    grid-column: span 5;
     padding: 10px;
     text-align: center;
     display: flex;
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.233);
-    
 }
 
 .navlist {
@@ -67,7 +57,6 @@ header {
 }
 
 main {
-    grid-column: span 5;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -111,23 +100,42 @@ main {
     text-transform: uppercase; 
 }
 
-.grid_galery {
-    max-width: 1300px;
-    width: 80%;
-    height: auto;
-    margin: 30px auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 300px);
+.galery {
+    display: flex;
     justify-content: center;
-    grid-gap: 10px;
+    margin-top: 20px;
+    
 }
 
-.grid_item {
-    width: 300px;
-    height: 200px;
-    background-color: black;
+.first_column {
+    display: flex;
+    flex-direction: column;
 }
 
+.second_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.third_column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.img_galery{
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.315);
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.img_galery:hover {
+    background-color: white;
+}
 
 footer {
     grid-column: span 5;
